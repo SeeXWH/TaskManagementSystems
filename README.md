@@ -30,7 +30,7 @@
 2. **Клонирование репозитория:**
    ```bash
    git clone https://github.com/your-username/TaskManagmentSystem.git
-
+    ```
 3. **Сборка и запуск:**
   ```bash
     cd task-management-system
