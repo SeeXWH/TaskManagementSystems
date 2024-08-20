@@ -62,10 +62,10 @@ public class TaskService {
     public Task getTaskById(long id, Authentication authentication) {
         Task task = taskRepository.findById(id)
                 .orElseThrow(() -> new TaskMenegmentExeption("not found task"));
-        if (!task.getUserAuthor().equals(authentication.getName()) || !task.getUserExecutor().equals(authentication.getName())) {
-            throw new TaskMenegmentExeption("You are not the creator or performer of this task");
-        } else {
+        if (task.getUserAuthor().equals(authentication.getName()) || task.getUserExecutor().equals(authentication.getName())) {
             return task;
+        } else {
+            throw new TaskMenegmentExeption("You are not the creator or performer of this task");
         }
 
     }
@@ -84,11 +84,11 @@ public class TaskService {
     public Task setStatus(long id, String status, Authentication authentication){
         Task task = taskRepository.findById(id)
                 .orElseThrow(() -> new TaskMenegmentExeption("not found task"));
-        if (!task.getUserExecutor().equals(authentication.getName())){
-            throw new TaskMenegmentExeption("You are not performer of this task");
+        if (task.getUserExecutor().equals(authentication.getName())){
+            task.setStatus(status);
+            return taskRepository.save(task);
         }
-        task.setStatus(status);
-        return taskRepository.save(task);
+        throw new TaskMenegmentExeption("You are not performer of this task");
     }
 
 }
