@@ -47,15 +47,18 @@ mvn spring-boot:run
 * POST /user/login: Вход существующего пользователя.
 
 **Конечные точки задач:**
+
 * POST /task/create: Создание новой задачи.
-PUT /task/edit?id={id}: Редактирование существующей задачи.
-DELETE /task/delete?id={id}: Удаление задачи.
-GET /task/getTask?id={id}: Получение задачи по ID.
-GET /task/myTask: Получение всех задач, назначенных вошедшему в систему пользователю.
-GET /task/userTask?user={username}: Получение всех задач, назначенных определенному пользователю.
-PUT /task/setStatus?id={id}&status={status}: Обновление статуса задачи.
-Конечные точки комментариев:
-POST /comment/create: Создание нового комментария к задаче.
-GET /comment/getComments?taskId={taskId}: Получение всех комментариев к задаче.
-Аутентификация
-API использует JWT (JSON Web Token) для аутентификации. После успешного входа возвращается токен. Включите этот токен в заголовок Authorization последующих запросов как токен Bearer (например, Authorization: Bearer <token>).
+* PUT /task/edit?id={id}: Редактирование существующей задачи.
+* DELETE /task/delete?id={id}: Удаление задачи.
+* GET /task/getTask?id={id}: Получение задачи по ID.
+* GET /task/myTask: Получение всех задач, назначенных вошедшему в систему пользователю.
+* GET /task/userTask?user={username}: Получение всех задач, назначенных определенному пользователю.
+* PUT /task/setStatus?id={id}&status={status}: Обновление статуса задачи.
+
+**Конечные точки комментариев:**
+
+* POST /comment/create: Создание нового комментария к задаче.
+* GET /comment/getComments?taskId={taskId}: Получение всех комментариев к задаче.
+## Аутентификация
+* API использует JWT (JSON Web Token) для аутентификации. После успешного входа возвращается токен. Включите этот токен в заголовок Authorization последующих запросов как токен Bearer (например, Authorization: Bearer <token>).
