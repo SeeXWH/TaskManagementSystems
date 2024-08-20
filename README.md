@@ -39,9 +39,9 @@
 4. **Создание базы данных Postgres**
   ```bash
 CREATE USER somePeople WITH PASSWORD '12345678';
-CREATE DATABASE TaskManagemtSystem;
-ALTER DATABASE TaskManagemtSystem OWNER TO somePeople;
-GRANT ALL PRIVILEGES ON DATABASE TaskManagemtSystem TO somePeople;
+CREATE DATABASE TaskManagementSystems;
+ALTER DATABASE TaskManagementSystems OWNER TO somePeople;
+GRANT ALL PRIVILEGES ON DATABASE TaskManagementSystems TO somePeople;
   ```
 ## Доступ к Swagger UI:
 После запуска приложения откройте Swagger UI по адресу http://localhost:8080/swagger-ui/index.html, чтобы изучить и протестировать API-конечные точки.
