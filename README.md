@@ -31,7 +31,8 @@
    ```bash
    git clone -b tz https://github.com/SeeXWH/task-management-system.git
 
-Сборка и запуск:
+3. **Сборка и запуск:**
+  ```bash
 cd task-management-system
 mvn spring-boot:run
 
