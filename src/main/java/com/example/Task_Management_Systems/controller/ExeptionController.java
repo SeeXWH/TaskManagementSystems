@@ -26,8 +26,11 @@ public class ExeptionController {
             status = HttpStatus.NOT_FOUND;
         } else if (ex.getMessage().contains("You are not performer of this task")) {
             status = HttpStatus.BAD_REQUEST;
+<<<<<<< HEAD
         } else if (ex.getMessage().contains("bad token")) {
             status = HttpStatus.FORBIDDEN;
+=======
+>>>>>>> origin/tz
         }
         return ResponseEntity.status(status).body(message);
     }
