@@ -35,8 +35,8 @@
 cd task-management-system
 mvn spring-boot:run
 
-Bash
-Доступ к Swagger UI:
+
+## Доступ к Swagger UI:
 После запуска приложения откройте Swagger UI по адресу http://localhost:8080/swagger-ui/index.html, чтобы изучить и протестировать API-конечные точки.
 Для работы вам потребуется залогиниться и после аунтифицироваться(смотрите конечные точки)
 API-конечные точки
