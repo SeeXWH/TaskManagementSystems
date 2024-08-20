@@ -43,11 +43,11 @@ mvn spring-boot:run
 
 **Конечные точки пользователей:**
 
-*POST /user/register: Регистрация нового пользователя.
-*POST /user/login: Вход существующего пользователя.
+* POST /user/register: Регистрация нового пользователя.
+* POST /user/login: Вход существующего пользователя.
 
 **Конечные точки задач:**
-*POST /task/create: Создание новой задачи.
+* POST /task/create: Создание новой задачи.
 PUT /task/edit?id={id}: Редактирование существующей задачи.
 DELETE /task/delete?id={id}: Удаление задачи.
 GET /task/getTask?id={id}: Получение задачи по ID.
