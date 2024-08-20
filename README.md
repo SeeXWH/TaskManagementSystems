@@ -33,8 +33,8 @@
 
 3. **Сборка и запуск:**
   ```bash
-  cd task-management-system
-  mvn spring-boot:run
+    cd task-management-system
+    mvn spring-boot:run
   ```
 4. **Создание базы данных Postgres**
   ```bash
