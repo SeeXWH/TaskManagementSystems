@@ -29,7 +29,7 @@
 
 2. **Клонирование репозитория:**
    ```bash
-   git clone https://github.com/SeeXWH/TaskManagmentSystem.git
+   git clone https://github.com/SeeXWH/TaskManagementSystems.git
     ```
 3. **Сборка и запуск:**
   ```bash
